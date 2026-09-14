@@ -1,7 +1,7 @@
 {
   "name": "montra",
   "version": "1.0.0",
-  "description": "Read Montra documents and tickets in Cursor — implementation specs built from narrated screen recordings, with the annotated screenshots and narration behind them.",
+  "description": "Read Montra documents and tickets in Cursor. Each ticket is an implementation spec built from a narrated screen recording, with the annotated screenshots and narration behind it.",
   "author": {
     "name": "Montra Interactive",
     "email": "support@montra.com"
