@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "montra": {
+      "url": "https://montra.com/api/mcp"
+    }
+  }
+}

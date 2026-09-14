@@ -1,0 +1,14 @@
+{
+  "name": "montra",
+  "version": "1.0.0",
+  "description": "Read Montra documents and tickets in Cursor — implementation specs built from narrated screen recordings, with the annotated screenshots and narration behind them.",
+  "author": {
+    "name": "Montra Interactive",
+    "email": "support@montra.com"
+  },
+  "homepage": "https://montra.com",
+  "repository": "https://github.com/Montra-Interactive/montra-cursor-plugin",
+  "license": "MIT",
+  "keywords": ["montra", "mcp", "tickets", "specs", "screen-recording", "product"],
+  "logo": "assets/logo.svg"
+}
