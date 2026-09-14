@@ -9,5 +9,5 @@
   "repository": "https://github.com/Montra-Interactive/montra-cursor-plugin",
   "license": "MIT",
   "keywords": ["montra", "mcp", "tickets", "specs", "screen-recording", "product"],
-  "logo": "assets/logo.svg"
+  "logo": "assets/logo-square.svg"
 }

@@ -12,12 +12,11 @@ record it once instead of retyping it.
 ## What is in here
 
 This plugin ships no code. Montra's MCP server is hosted, so the repo is a manifest that
-points Cursor at it, plus a rule describing how to treat Montra content.
+points Cursor at it.
 
 ```
 .cursor-plugin/plugin.json   plugin manifest
 mcp.json                     the Montra MCP server
-rules/montra.mdc             how to treat Montra tickets
 assets/                      plugin logo
 ```
 
