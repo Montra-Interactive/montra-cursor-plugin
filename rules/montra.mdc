@@ -1,38 +1,31 @@
 ---
-description: How to work with Montra documents and tickets — treat them as the person's spec, not as state to update
+description: How to work with Montra documents and tickets, which are the person's spec rather than state to update
 alwaysApply: false
 ---
 
 # Working with Montra
 
-Montra turns narrated screen recordings into implementation-ready documents made of
-tickets. A ticket body is a markdown implementation spec, written from what the person
-said and did on screen. The Montra tools read and update documents, tickets, ticket
-images, and transcripts in the one workspace the connection was authorized for.
+A Montra ticket is an implementation spec, written from what the person said and did on
+screen. Start from `list_documents` or `get_document`.
 
-## Treat the connection as read-only
+## Treat the connection as read only
 
 The tickets are the person's spec. Report progress in conversation, not by editing
 Montra.
 
-- Do not call `create_document`, `update_document`, `create_ticket`, `update_ticket`, or
-  `delete_ticket` unless the user explicitly asks for that change in the current
-  conversation.
+- Do not create, update, or delete documents or tickets unless the user explicitly asks
+  for that change in the current conversation.
 - Never mark a ticket implemented, done, or complete by rewriting its title, summary, or
   body. There is no ticket status to set, and an unrequested edit overwrites what the
   person wrote.
-- `link_ticket_issue` is the exception: when the user asks you to create a Linear or
-  Notion issue from a ticket, recording that link is part of the export — do it without a
+- `link_ticket_issue` is the exception. When the user asks you to create a Linear or
+  Notion issue from a ticket, recording that link is part of the export, so it needs no
   separate ask.
 
 ## Getting context
 
-- Start from `list_documents` or `get_document`.
-- `get_ticket_images` returns the annotated screenshots behind a ticket. They usually
-  carry the detail the text leaves implicit — look at them before deciding scope.
-- `get_transcript` returns the narration, with timestamps, when the wording of a ticket
-  is ambiguous.
-- When the user pastes a Montra share link (`montra.com/share/...` or
-  `/tasks-for-agents/...`), call `get_document_by_share_url` with it instead of fetching
-  the web page. It resolves links in any workspace, and invite-only links resolve as the
-  signed-in user.
+- A ticket's screenshots usually carry the detail the text leaves implicit. Look at them
+  before deciding scope.
+- The transcript is worth reading when the wording of a ticket is ambiguous.
+- When the user pastes a Montra share link, resolve it with the share link tool instead
+  of fetching the web page.

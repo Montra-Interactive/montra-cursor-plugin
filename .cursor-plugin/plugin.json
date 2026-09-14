@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Read Montra documents and tickets in Cursor. Each ticket is an implementation spec built from a narrated screen recording, with the annotated screenshots and narration behind it.",
   "author": {
-    "name": "Montra Interactive",
-    "email": "support@montra.com"
+    "name": "Montra Interactive"
   },
   "homepage": "https://montra.com",
   "repository": "https://github.com/Montra-Interactive/montra-cursor-plugin",
